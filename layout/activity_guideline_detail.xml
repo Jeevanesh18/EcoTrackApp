@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_guideline_details.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beige"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newdarkgreen"
+            android:navigationIcon="@drawable/ic_back"
+            android:titleTextColor="@color/white"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/guideline_bg_new"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="@id/bg"
+                app:layout_constraintTop_toTopOf="@id/bg"
+                app:layout_constraintEnd_toEndOf="@id/bg"
+                app:layout_constraintBottom_toBottomOf="@+id/bg"
+                android:layout_marginBottom="16dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoextrabold"
+            android:textSize="50sp"
+            android:textColor="@color/lightblack"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:letterSpacing="0.05"
+            />
+
+        <!-- Introduction -->
+
+        <TextView
+            android:id="@+id/detailIntro"
+            android:layout_width="415dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txt_background"
+            android:backgroundTint="@color/newgreen"
+            android:fontFamily="@font/nunitosemibold"
+            android:padding="20dp"
+            android:textColor="@color/lightblack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sometipstxt"
+            android:text="Some tips"
+            android:textSize="29sp"
+            android:fontFamily="@font/nunitoextrabold"
+            android:textColor="@color/lightblack"
+            android:letterSpacing="0.2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <!-- Tips -->
+        <TextView
+            android:id="@+id/detailTips"
+            android:layout_width="415dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitosemibold"
+            android:padding="20dp"
+            android:background="@drawable/txt_background"
+            android:backgroundTint="@color/newgreen"
+            />
+
+        <TextView
+            android:id="@+id/videotxt"
+            android:text="Video"
+            android:textSize="29sp"
+            android:fontFamily="@font/nunitoextrabold"
+            android:textColor="@color/lightblack"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="0.2"
+            />
+
+        <!-- YouTube Player -->
+        <WebView
+            android:id="@+id/detailVideo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="250dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

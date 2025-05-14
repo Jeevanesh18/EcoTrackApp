@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".ManageProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/TBMainAct"
+        android:layout_width="0dp"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_manage_profile_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/nunitoextrabold"
+        android:letterSpacing="0.2"
+        android:text="Manage Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TBMainAct" />
+
+    <TextView
+        android:id="@+id/textView_manage_profile_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitosemibold"
+        android:letterSpacing="0.2"
+        android:paddingHorizontal="30dp"
+        android:text="Your profile is your digital identity. Keep it updated, secure, and uniquely you."
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_manage_profile_head" />
+
+        <RelativeLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/login_bg"
+            app:layout_constraintTop_toBottomOf="@id/textView_manage_profile_quote"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView_manage_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitobold"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:text="Name*"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp"
+                android:letterSpacing="0.2" />
+
+            <EditText
+                android:id="@+id/edittext_manage_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_manage_profile_name"
+                android:layout_alignStart="@+id/textView_manage_profile_name"
+                android:layout_alignEnd="@+id/textView_manage_profile_name"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:drawable/editbox_background"
+                android:fontFamily="@font/nunitosemibold"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_manage_profile_address"
+                android:layout_below="@id/edittext_manage_profile_name"
+                android:text="Address*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunitobold"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp"
+                android:letterSpacing="0.2" />
+
+            <EditText
+                android:id="@+id/edittext_manage_profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_manage_profile_address"
+                android:layout_alignStart="@+id/textView_manage_profile_address"
+                android:layout_alignEnd="@+id/textView_manage_profile_address"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-1dp"
+                android:background="@android:drawable/editbox_background"
+                android:fontFamily="@font/nunitosemibold"
+                android:hint="Enter Address"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_manage_profile_city"
+                android:layout_below="@id/edittext_manage_profile_address"
+                android:text="City*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunitobold"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp"
+                android:letterSpacing="0.2" />
+
+            <EditText
+                android:id="@+id/edittext_manage_profile_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_manage_profile_city"
+                android:layout_alignStart="@+id/textView_manage_profile_city"
+                android:layout_alignEnd="@+id/textView_manage_profile_city"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:drawable/editbox_background"
+                android:fontFamily="@font/nunitosemibold"
+                android:hint="Enter City"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_manage_profile_state"
+                android:layout_below="@id/edittext_manage_profile_city"
+                android:text="State*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunitobold"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp"
+                android:letterSpacing="0.2" />
+
+            <EditText
+                android:id="@+id/edittext_manage_profile_state"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_manage_profile_state"
+                android:layout_alignStart="@+id/textView_manage_profile_state"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:drawable/editbox_background"
+                android:fontFamily="@font/nunitosemibold"
+                android:hint="Enter State"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_manage_profile_postcode"
+                android:layout_below="@id/edittext_manage_profile_state"
+                android:text="Postcode*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunitobold"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp"
+                android:letterSpacing="0.2" />
+
+            <EditText
+                android:id="@+id/edittext_manage_profile_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_manage_profile_postcode"
+                android:layout_alignStart="@+id/textView_manage_profile_postcode"
+                android:layout_alignEnd="@+id/textView_manage_profile_postcode"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:drawable/editbox_background"
+                android:fontFamily="@font/nunitosemibold"
+                android:hint="Enter Postcode"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/lightblack"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_update_profile"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/nunitoextrabold"
+        android:letterSpacing="0.3"
+        android:text="Update Profile"
+        android:textSize="16sp"
+        app:flow_verticalBias="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/middle"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

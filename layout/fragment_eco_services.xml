@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/beige"
+    tools:context=".fragment.EcoServicesFragment">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eco Services"
+        android:fontFamily="@font/nunitoextrabold"
+        android:textSize="30dp"
+        android:textColor="@color/lightblack"
+        android:letterSpacing="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp"
+        />
+
+    <ImageButton
+        android:id="@+id/reportoverflowingbtn"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/reportoverflowingbtn_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <ImageButton
+        android:id="@+id/requestbtn"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/reportoverflowingbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/requestspecialwastepickupbtn_new"
+        />
+
+    <ImageButton
+        android:id="@+id/myReportBtn"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/myreportbtn"
+        app:layout_constraintTop_toBottomOf="@id/requestbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <ImageButton
+        android:id="@+id/feedbackbtn"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/feedbackbtn_new"
+        app:layout_constraintTop_toBottomOf="@id/myReportBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

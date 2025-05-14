@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/newdarkgreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/textView_login_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/nunitoextrabold"
+        android:letterSpacing="0.2"
+        android:text="Welcome"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Earth is what we all have in common. Together, let's track, act, and transform for a greener future."
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunitobold"
+        android:letterSpacing="0.1"
+        android:textColor="@color/beige"
+        android:textSize="16sp"
+        />
+
+
+    <!-- Top Part: Image Slider with Text -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="10dp"
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="3" />
+
+    <!-- Bottom Part: Calendar -->
+    <CalendarView
+        android:layout_marginTop="10dp"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:weekSeparatorLineColor="@color/yellow"
+        android:focusedMonthDateColor="@android:color/holo_green_light"
+        android:unfocusedMonthDateColor="@android:color/holo_green_light"
+        android:background="@drawable/login_bg"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#32620e"
+    tools:context=".FeedbackActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#32620e"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back"/>
+
+    <TextView
+        android:id="@+id/textView_login_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="@font/nunitoextrabold"
+        android:letterSpacing="0.2"
+        android:text="Feedback On Services"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/yellow"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/content_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/nunitosemibold"
+        app:layout_constraintTop_toBottomOf="@id/textView_login_head"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Your opinion matters to us!"
+        android:layout_marginLeft="35dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/beige"
+        android:textSize="15sp"
+        android:letterSpacing="0.2"/>
+
+            <RatingBar
+                android:id="@+id/myRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginEnd="70dp"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"/>
+
+
+            <EditText
+                android:id="@+id/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                android:background="@drawable/login_bg"
+                android:fontFamily="@font/nunitosemibold"
+                android:padding="20dp"
+                android:hint="Tell us how we can improve! "
+                android:letterSpacing="0.1"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp"
+                android:inputType="text"
+                android:gravity="top"/>
+
+            <Button
+                android:id="@+id/btn_submit_request"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:fontFamily="@font/nunitobold"
+                android:layout_gravity="center"
+                android:letterSpacing="0.2"
+                android:background="@drawable/login_btn_bg"
+                android:layout_marginTop="20dp"
+                android:text="Submit Feedback" />
+</LinearLayout>

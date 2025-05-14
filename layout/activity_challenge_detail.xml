@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/tB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        android:titleTextColor="@color/white"
+        android:navigationIcon="@drawable/ic_back"
+        />
+
+    <!-- Badge Display -->
+    <FrameLayout
+        android:layout_width="217dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center">
+
+        <!-- Colored Badge Background -->
+        <ImageView
+            android:id="@+id/badgeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="Challenge Badge"
+            android:src="@drawable/uncolored_badge_new" />
+
+        <!-- Unique Image on top of the badge -->
+        <ImageView
+            android:id="@+id/uniqueImage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:contentDescription="Unique Badge Image"
+            android:visibility="gone" /> <!-- Initially invisible -->
+    </FrameLayout>
+
+    <!-- Challenge Topic -->
+    <TextView
+        android:id="@+id/tvTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunitoextrabold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="________"
+        android:textColor="@color/newdarkgreen"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Challenge Details -->
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/newdarkgreen"
+        android:fontFamily="@font/nunitosemibold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="40dp"
+        android:letterSpacing="0.2"/>
+
+
+    <!-- Message Text (for yes or no)-->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/newdarkgreen"
+        android:fontFamily="@font/nunitosemibold"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:letterSpacing="0.2"
+        /> <!-- Initially invisible -->
+
+    <!-- Yes/No Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/yesButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yesbg"
+            android:text="Yes"
+            android:fontFamily="@font/nunitoextrabold"
+            android:backgroundTint="@color/newdarkgreen"
+            android:letterSpacing="0.2"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/yesbg"
+            android:text="No"
+            android:fontFamily="@font/nunitoextrabold"
+            android:letterSpacing="0.2"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/newdarkgreen"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+

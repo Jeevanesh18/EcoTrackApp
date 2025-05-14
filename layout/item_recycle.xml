@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:layout_margin="4dp"
+    android:background="@drawable/rounded_background"
+    android:backgroundTint="@color/newgreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Image fetched from Firebase -->
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="top|center"
+            android:scaleType="fitCenter"  />
+
+        <!-- Text overlaying the image -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/lightblack"
+            android:fontFamily="@font/nunitoextrabold"
+            android:letterSpacing="0.1"/>
+    </FrameLayout>
+</LinearLayout>
+

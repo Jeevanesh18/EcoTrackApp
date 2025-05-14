@@ -1,0 +1,63 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/nunitosemibold"/>
+
+        <TextView
+            android:id="@+id/tvReportEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: example@example.com"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/nunitosemibold"/>
+
+        <TextView
+            android:id="@+id/tvReportProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem: Overflowing Bin"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/nunitosemibold"/>
+
+        <TextView
+            android:id="@+id/tvReportCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City: Sample City"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/nunitosemibold"/>
+
+        <TextView
+            android:id="@+id/tvReportState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State: Sample State"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/nunitosemibold"/>
+
+
+        <TextView
+            android:id="@+id/tvReportStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Pending"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/nunitosemibold"/>
+    </LinearLayout>
+</ScrollView>
